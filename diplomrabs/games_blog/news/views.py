@@ -3,7 +3,7 @@ from django.views.generic import ListView
 from .models import *
 
 
-class GameHome(ListView):
+class NewsBlogHome(ListView):
     model = News
     template_name = "news/index.html"
     context_object_name = "posts"
