@@ -1,0 +1,15 @@
+{% extends 'news/base.html' %}
+
+{% block content %}
+
+<div class="news">
+    <h1>{{ post.title }}</h1>
+
+    {% if post.image %}
+    <img src="{{ post.image.url }}" alt="" class="image">
+    {% endif %}
+
+    {{ post.content|safe }}
+</div>
+
+{% endblock %}
